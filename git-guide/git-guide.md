@@ -8,13 +8,22 @@ There is a rich Git community online. In addition to this guide you can use Goog
 
 # Table of Contents
 
-**[What is Git?](#what-is-git)**<br>
-**[Vocabulary](#vocabulary)**<br>
-**[Installation](#installation)**<br>
-**[Starting a Project](#starting-a-project)**<br>
-**[Stage, Commit, Push](#stage-commit-push)**<br>
-**[Collaboration on Code](#collaboration-on-code)**<br>
-**[Special Considerations](#special-considerations)**<br>
+* **[What is Git?](#what-is-git)**
+* **[Vocabulary](#vocabulary)**
+* **[Installation](#installation)**
+  * [Best Practice Toolset](#best-practice-toolset)
+* **[Starting a Project](#starting-a-project)**
+* **[Stage, Commit, Push](#stage-commit-push)**
+* **[Collaboration on Code](#collaboration-on-code)**
+  * [Resolve Merge Conflicts](#resolve-merge-conflicts)
+* **[Special Considerations](#special-considerations)**
+  * [.gitIgnore](#gitignore)
+  * [Non-Text Files](#non-text-files)
+  * [Moving/Renaming a File](#moving-renaming-a-file)
+  * [Save Password in Git Bash](#save-password-in-git-bash)
+  * [Repository Not Found](#repository-not-found)
+  * [Clearing Sensitive Data](#clearing-sensitive-data)
+  * [Choosing an Open-Source License](#choosing-an-open-source-license)
 
 # What is Git?
 
@@ -354,7 +363,7 @@ If you must change names, make sure to **do the name change in its' own commit**
 
 Then, stage and commit changes separately. That way you can actually see the changes line by line. If you do both in one commit, it'll show the old file being deleted and the new different file being added, with no line-by-line comparison.
 
-## Password Setup in Git Bash
+## Save Password in Git Bash
 
 You’ll want to save your password in Git Bash so you won’t have to type it every time you push or pull. Saving this way will also save it for VS Code.
 
@@ -400,3 +409,19 @@ git gc --prune=now
 
 * This may take a while to run. Once it is finished, push to the remote repo. You may need to push with the -force keyword.
 * Add your file with sensitive data to a .gitignore file to ensure that you don't accidentally commit it again.
+
+# Choosing an Open-Source License
+
+*This guide is not legal support. Please work with your legal support when choosing a license.*
+
+You may decide to use GitHub or Bitbucket to share your project publicly. When you contribute a new project to the open-source community, it is important to choose the correct license. In addition to this guide, you can refer to these great articles:
+
+* https://opensource.guide/legal/
+* https://choosealicense.com/
+
+Here are some high-level things to watch out for:
+
+* The MIT license is a good one to start with because it is simple and permissive.
+* Check the license of any dependencies your code relies on. Some licenses require dependent projects to have specific licenses. This is called *copyleft*. 
+* Many R packages are licensed as GPL which requires that all dependent projects also use GPL. If your project relies on R packages it is likely they are GPL and therefore you must use the GPL license. Python does not typically have this restriction.
+* If you expect external contributors, consider Apache Commons 2.0. This license may be better if you want to build a community around your project and you aren't relying on any copyleft projects that restrict your choice of license.
