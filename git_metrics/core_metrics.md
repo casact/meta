@@ -50,31 +50,7 @@ repos is as follows.
 
 ## Commits
 
-    ## i Running gh query
-
-    ## i Running gh query, got 100 records of about 200
-
-    ## i Running gh query
-
-    ## i Running gh query, got 100 records of about 800
-
-    ## i Running gh query, got 300 records of about 1200
-
-    ## i Running gh query, got 600 records of about 1600
-
-    ## i Running gh query, got 1000 records of about 2000
-
-    ## i Running gh query, got 1500 records of about 2400
-
-    ## i Running gh query, got 2100 records of about 2800
-
-    ## i Running gh query, got 2800 records of about 3200
-
-    ## i Running gh query
-
-    ## i Running gh query, got 100 records of about 200
-
-There have been 1,346 commits in total.
+There have been 1,347 commits in total.
 
 The top ten repos by number of commits are:
 
@@ -182,7 +158,7 @@ The ten most frequent contributors to various repos are:
 </tr>
 <tr class="even">
 <td style="text-align: left;">ResearchActuary</td>
-<td style="text-align: right;">112</td>
+<td style="text-align: right;">113</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">kevinykuo</td>
