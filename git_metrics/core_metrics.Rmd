@@ -1,0 +1,339 @@
+---
+title: GitHub Metrics
+output: md_document
+---
+
+```{r include = FALSE}
+library(gh)
+library(tidyverse)
+
+knitr::opts_chunk$set(
+  echo = FALSE
+)
+```
+
+```{r}
+account_established <- as.Date("2019-08-01")
+```
+
+# Overview
+
+This document will provide a basic overview of the volume of and interaction with the CAS GitHub organizational account. The account was established in August of 2019.
+
+## Repos
+
+```{r}
+lst_cas_repos <- gh("GET /orgs/{org}/repos", org = "CASact", .limit = Inf)
+
+repo_cols <- c(
+  'name'
+  , 'description'
+  , 'fork'
+  , 'created_at'
+  , 'updated_at'
+  , 'pushed_at'
+  , 'stargazers_count'
+  , 'watchers'
+  , 'watchers_count'
+  , 'language'
+  , 'forks'
+  , 'forks_count'
+  , 'open_issues'
+  , 'open_issues_count'
+)
+
+tbl_repo <- tibble(repo = lst_cas_repos) %>% 
+  unnest_wider(repo) %>% 
+  select_at(repo_cols) %>% 
+  mutate(
+    created_at = as.Date(created_at)
+  )
+```
+
+
+```{r}
+repo_count <- nrow(tbl_repo)
+```
+
+As a reminder, a repository --- typically referred to as a "repo", for short --- is the unit of measure for a single project. A repo may contain more than one file, and in fact, most repos contain multiple files.
+
+## By date
+
+As of `r Sys.Date()`, there are `r repo_count` repositories on the site.
+
+The cumulative count of repos is shown in Figure \@ref(fig:cumulative_repo). We note that we begin with ten repos as of the day that the account was established. This is a result of several repos which predate the CAS' account having been transferred from other owners to the CAS.
+
+```{r cumulative_repo}
+tbl_repo %>% 
+  arrange(created_at) %>% 
+  mutate(
+    num_repos = nrow(.) %>% 
+      seq_len() 
+  ) %>%
+  filter(created_at > account_established) %>% 
+  group_by(created_at) %>% 
+  summarise(
+    num_repos = max(num_repos)
+  ) %>% 
+  bind_rows(
+    tibble(created_at = Sys.Date(), num_repos = repo_count)
+  ) %>% 
+  ggplot(aes(created_at, num_repos)) + 
+  geom_step() + 
+  scale_y_continuous(limits = c(0, NA), breaks = seq(0, 20, by = 5), labels = scales::label_comma(accuracy = 1))
+```
+
+## By language
+
+Where there is a predominant language for the repo, GitHub will indicate it. Of those repos with a single predominant language, the number of repos is as follows.
+
+```{r}
+tbl_repo %>% 
+  filter(!is.na(language)) %>% 
+  mutate(
+    language = language %>% 
+      fct_infreq() %>% 
+      fct_rev()
+  ) %>% 
+  ggplot(aes(language)) + 
+  geom_bar() +
+  coord_flip()
+```
+
+## Watchers
+
+```{r}
+tbl_repo %>% 
+  filter(watchers > 0) %>% 
+  mutate(name = fct_reorder(name, watchers)) %>% 
+  ggplot(aes(name, watchers)) + 
+  geom_bar(stat = 'identity') +
+  coord_flip()
+```
+
+<!--
+## Stars
+
+```{r eval = FALSE}
+tbl_repo %>% 
+  filter(stargazers_count > 0) %>% 
+  mutate(name = fct_reorder(name, stargazers_count)) %>% 
+  ggplot(aes(name, stargazers_count)) + 
+  geom_bar(stat = 'identity') +
+  coord_flip()
+```
+-->
+
+## Forks
+
+```{r}
+tbl_repo %>% 
+  filter(forks > 0) %>% 
+  mutate(name = name %>% as.factor() %>% fct_reorder(forks)) %>% 
+  ggplot(aes(name, forks)) + 
+  geom_bar(stat = 'identity') +
+  coord_flip()
+```
+
+<!-- Maybe add some stuff about words in the description or some shit. -->
+
+# Contributions
+
+## Commits
+
+```{r}
+get_repo_commits <- function(repo) {
+  
+  lst_commits <- gh(
+    "GET /repos/{owner}/{repo}/commits"
+    , owner = "casact"
+    , repo = repo
+    , affiliation = "all"
+    , .limit = Inf)
+  
+  tbl_repo_commits <- lst_commits %>% 
+    map_dfr(function(x) {
+      tibble(
+        repo = repo
+        , sha = x$sha
+        , author = x$author$login %>% ifelse(is.null(.), NA, .)
+        # , datetime = x$commit$author$date %>% as.Date
+        , date = x$commit$author$date %>% as.Date()
+      )
+    })
+}
+
+tbl_commits <- tbl_repo$name %>% 
+  map_dfr(get_repo_commits)
+```
+
+There have been `r nrow(tbl_commits) %>% format(big.mark = ",")` commits in total.
+
+```{r }
+tbl_commits_by_date <- tbl_commits %>% 
+  count(repo, date, name = 'commits')
+
+tbl_commits_top_ten <- tbl_commits_by_date %>% 
+  group_by(repo) %>% 
+  summarise(total_commits = sum(commits)) %>% 
+  arrange(desc(total_commits)) %>% 
+  mutate(
+    rank = seq_len(nrow(.))
+  ) %>% 
+  head(10) %>% 
+  ungroup()
+
+tbl_commits_by_date <- left_join(
+  tbl_commits_by_date, tbl_commits_top_ten, by = "repo"
+)
+```
+
+The top ten repos by number of commits are:
+
+```{r}
+tbl_commits_top_ten %>% 
+  select(-rank) %>% 
+  knitr::kable()
+```
+
+The cumulative growth of commits over time has been:
+
+```{r}
+tbl_commits_by_date %>% 
+  group_by(date) %>% 
+  summarise(total_commits = sum(commits)) %>% 
+  arrange(date) %>% 
+  mutate(cumulative_commits = cumsum(total_commits)) %>% 
+  filter(date > account_established) %>% 
+  ggplot(aes(date, cumulative_commits)) + 
+  # geom_point() + 
+  geom_line() +
+  NULL
+```
+
+<!-- Show commits over time for each repo separately. 
+
+```{r}
+tbl_commits_by_date %>% 
+  filter(date > account_established) %>% 
+  ggplot(aes(date, commits)) + 
+  geom_point()
+```
+
+```{r}
+tbl_commits_by_date %>% 
+  filter(rank < 10) %>% 
+  filter(date > account_established) %>% 
+  ggplot(aes(date, commits, color = repo)) + 
+  geom_point()
+```
+
+
+```{r}
+tbl_commits_by_date %>% 
+  filter(rank < 10) %>% 
+  group_by(repo) %>% 
+  arrange(date) %>% 
+  mutate(cumulative_commits = cumsum(commits)) %>% 
+  filter(date > account_established) %>% 
+  ggplot(aes(date, cumulative_commits, color = repo)) + 
+  geom_point() + 
+  geom_line() +
+  NULL
+  facet_wrap(~repo, scales = 'free_y')
+```
+
+```{r eval = FALSE}
+lst_commit_activity <- gh(
+  "GET /repos/{owner}/{repo}/stats/commit_activity"
+  , owner = "casact"
+  , repo = "imaginator"
+  , .limit = Inf
+)
+```
+-->
+
+## Commiters
+
+The ten most frequent contributors to various repos are:
+
+```{r}
+tbl_commits %>% 
+  filter(!is.na(author)) %>% 
+  group_by(author) %>% 
+  count() %>% 
+  arrange(desc(n)) %>% 
+  head(10) %>% 
+  knitr::kable()
+```
+
+Authors who have worked on multiple repositories are:
+
+```{r}
+tbl_commits %>% 
+  filter(!is.na(author)) %>% 
+  select(author, repo) %>% 
+  unique() %>% 
+  group_by(author) %>% 
+  count() %>% 
+  arrange(desc(n)) %>% 
+  filter(n > 1) %>% 
+  head(10) %>% 
+  knitr::kable()
+```
+
+## Pull requests
+
+```{r}
+lst_pulls <- gh(
+  "GET /repos/{owner}/{repo}/pulls"
+  , owner = "casact"
+  , repo = "imaginator"
+  , state = "all"
+  , .limit = Inf)
+```
+
+Pull requests take place when a GitHub user submits an improvement or correction to be considered by the maintainer of the repo.
+
+Metric are coming soon.
+
+<!--
+
+## Collaborators
+
+```{r}
+get_repo_collaborators <- function(repo) {
+  
+  lst_collaborators <- gh(
+    "GET /repos/{owner}/{repo}/collaborators"
+    , owner = "casact"
+    , repo = repo
+    , affiliation = "all"
+    , .limit = Inf)
+  
+  tbl_repo_collaborators <- lst_collaborators %>% 
+    map_dfr(function(x) {
+      tibble(
+        repo = repo
+        , user = x$login
+        , type = x$type
+      )
+    })
+}
+
+tbl_collaborators <- tbl_repo$name %>% 
+  map_dfr(get_repo_collaborators)
+```
+
+```{r}
+tbl_collaborators %>% 
+  filter(!user %in% c('aadler', 'ResearchActuary')) %>% 
+  count(user, sort = TRUE)
+```
+
+```{r}
+tbl_collaborators %>% 
+  filter(!user %in% c('aadler', 'ResearchActuary')) %>% 
+  count(repo, sort = TRUE)
+```
+-->
