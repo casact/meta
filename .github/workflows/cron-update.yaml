@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - '**.Rmd'
-  workflow_dispatch
 
 jobs:
   build:
