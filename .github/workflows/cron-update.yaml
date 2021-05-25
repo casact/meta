@@ -49,9 +49,9 @@ jobs:
         run: |
           git config --local user.name "$GITHUB_ACTOR"
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          PNG_FILES=($(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '[.]png$'))
-          echo $PNG_FILES
-          MD_FILES=($(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '[.]md$'))
+          PNG_FILES=($(git ls-files -m *.png))
+          MD_FILES=($(git ls-files -m *.md))
+          echo ${MD_FILES[*]}
           git add ${PNG_FILES[*]} || echo "No png files to add"
           git add MD_FILES || echo "No new markdown files to add"
           git commit -m 'Re-build GitHub metrics' || echo "No changes to commit"
