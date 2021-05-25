@@ -35,6 +35,9 @@ jobs:
         run: |
           R -e 'install.packages("renv")'
           R -e 'renv::restore()'
+      
+      - name: Install dependencies
+        run: Rscript -e 'install.packages(c("rmarkdown","gh", "tidyverse"))'
 
       - name: Render Rmarkdown files
         run: |
