@@ -1,5 +1,4 @@
-Overview
-========
+# Overview
 
 This file was updated on 2021-05-26.
 
@@ -7,15 +6,13 @@ This document will provide a basic overview of the volume of and
 interaction with the CAS GitHub organizational account. The account was
 established in August of 2019.
 
-Repos
------
+## Repos
 
 As a reminder, a repository — typically referred to as a “repo”, for
 short — is the unit of measure for a single project. A repo may contain
 more than one file, and in fact, most repos contain multiple files.
 
-By date
--------
+## By date
 
 As of 2021-05-26, there are 18 repositories on the site.
 
@@ -27,8 +24,7 @@ owners to the CAS.
 
 ![](core_metrics_files/figure-markdown_strict/cumulative_repo-1.png)
 
-By language
------------
+## By language
 
 Where there is a predominant language for the repo, GitHub will indicate
 it. Of those repos with a single predominant language, the number of
@@ -36,8 +32,7 @@ repos is as follows.
 
 ![](core_metrics_files/figure-markdown_strict/unnamed-chunk-5-1.png)
 
-Watchers
---------
+## Watchers
 
 ![](core_metrics_files/figure-markdown_strict/unnamed-chunk-6-1.png)
 
@@ -47,20 +42,17 @@ Watchers
 
 -->
 
-Forks
------
+## Forks
 
 ![](core_metrics_files/figure-markdown_strict/unnamed-chunk-8-1.png)
 
 <!-- Maybe add some stuff about words in the description or some shit. -->
 
-Contributions
-=============
+# Contributions
 
-Commits
--------
+## Commits
 
-There have been 1,368 commits in total.
+There have been 1,370 commits in total.
 
 The top ten repos by number of commits are:
 
@@ -106,7 +98,7 @@ The top ten repos by number of commits are:
 </tr>
 <tr class="odd">
 <td style="text-align: left;">meta</td>
-<td style="text-align: right;">25</td>
+<td style="text-align: right;">27</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ef-yield-curve-generators</td>
@@ -150,8 +142,7 @@ The cumulative growth of commits over time has been:
 
 -->
 
-Commiters
----------
+## Commiters
 
 The ten most frequent contributors to various repos are:
 
@@ -169,7 +160,7 @@ The ten most frequent contributors to various repos are:
 </tr>
 <tr class="even">
 <td style="text-align: left;">ResearchActuary</td>
-<td style="text-align: right;">133</td>
+<td style="text-align: right;">135</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">kevinykuo</td>
@@ -239,8 +230,7 @@ Authors who have worked on multiple repositories are:
 </tbody>
 </table>
 
-Pull requests
--------------
+## Pull requests
 
 Pull requests take place when a GitHub user submits an improvement or
 correction to be considered by the maintainer of the repo.
