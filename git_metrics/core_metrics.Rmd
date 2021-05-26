@@ -21,6 +21,8 @@ account_established <- as.Date("2019-08-01")
 
 # Overview
 
+This file was updated on `r Sys.Date()`.
+
 This document will provide a basic overview of the volume of and interaction with the CAS GitHub organizational account. The account was established in August of 2019.
 
 ## Repos
@@ -298,4 +300,4 @@ lst_pulls <- gh(
 
 Pull requests take place when a GitHub user submits an improvement or correction to be considered by the maintainer of the repo.
 
-Metric are coming soon.
+Metrics coming soon.
