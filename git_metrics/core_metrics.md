@@ -1,18 +1,23 @@
-# Overview
+Overview
+========
+
+This file was updated on 2021-05-26.
 
 This document will provide a basic overview of the volume of and
 interaction with the CAS GitHub organizational account. The account was
 established in August of 2019.
 
-## Repos
+Repos
+-----
 
 As a reminder, a repository — typically referred to as a “repo”, for
 short — is the unit of measure for a single project. A repo may contain
 more than one file, and in fact, most repos contain multiple files.
 
-## By date
+By date
+-------
 
-As of 2021-05-25, there are 18 repositories on the site.
+As of 2021-05-26, there are 18 repositories on the site.
 
 The cumulative count of repos is shown in Figure
 @ref(fig:cumulative\_repo). We note that we begin with ten repos as of
@@ -22,7 +27,8 @@ owners to the CAS.
 
 ![](core_metrics_files/figure-markdown_strict/cumulative_repo-1.png)
 
-## By language
+By language
+-----------
 
 Where there is a predominant language for the repo, GitHub will indicate
 it. Of those repos with a single predominant language, the number of
@@ -30,7 +36,8 @@ repos is as follows.
 
 ![](core_metrics_files/figure-markdown_strict/unnamed-chunk-5-1.png)
 
-## Watchers
+Watchers
+--------
 
 ![](core_metrics_files/figure-markdown_strict/unnamed-chunk-6-1.png)
 
@@ -40,17 +47,20 @@ repos is as follows.
 
 -->
 
-## Forks
+Forks
+-----
 
 ![](core_metrics_files/figure-markdown_strict/unnamed-chunk-8-1.png)
 
 <!-- Maybe add some stuff about words in the description or some shit. -->
 
-# Contributions
+Contributions
+=============
 
-## Commits
+Commits
+-------
 
-There have been 1,347 commits in total.
+There have been 1,368 commits in total.
 
 The top ten repos by number of commits are:
 
@@ -95,12 +105,12 @@ The top ten repos by number of commits are:
 <td style="text-align: right;">38</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ef-yield-curve-generators</td>
-<td style="text-align: right;">10</td>
+<td style="text-align: left;">meta</td>
+<td style="text-align: right;">25</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">double_lift</td>
-<td style="text-align: right;">9</td>
+<td style="text-align: left;">ef-yield-curve-generators</td>
+<td style="text-align: right;">10</td>
 </tr>
 </tbody>
 </table>
@@ -140,7 +150,8 @@ The cumulative growth of commits over time has been:
 
 -->
 
-## Commiters
+Commiters
+---------
 
 The ten most frequent contributors to various repos are:
 
@@ -158,7 +169,7 @@ The ten most frequent contributors to various repos are:
 </tr>
 <tr class="even">
 <td style="text-align: left;">ResearchActuary</td>
-<td style="text-align: right;">113</td>
+<td style="text-align: right;">133</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">kevinykuo</td>
@@ -228,52 +239,10 @@ Authors who have worked on multiple repositories are:
 </tbody>
 </table>
 
-## Pull requests
+Pull requests
+-------------
 
 Pull requests take place when a GitHub user submits an improvement or
 correction to be considered by the maintainer of the repo.
 
-Metric are coming soon.
-
-<!--
-
-## Collaborators
-
-
-
-
-```
-## # A tibble: 11 x 2
-##    user                n
-##    <chr>           <int>
-##  1 PirateGrunt         4
-##  2 windwill            2
-##  3 colonelsmoothie     1
-##  4 garyappleseed       1
-##  5 genedan             1
-##  6 jbogaardt           1
-##  7 kevinykuo           1
-##  8 lukeiamurfather     1
-##  9 rajesh06            1
-## 10 reserveprism        1
-## 11 spencerhs5          1
-```
-
-
-```
-## # A tibble: 11 x 2
-##    repo                          n
-##    <chr>                     <int>
-##  1 cascsim                       3
-##  2 ef-yield-curve-generators     2
-##  3 OSSCIntro                     2
-##  4 chainladder-python            1
-##  5 covid-19-visualization        1
-##  6 double_lift                   1
-##  7 gk_errata                     1
-##  8 imaginator                    1
-##  9 PCDM                          1
-## 10 raw_package                   1
-## 11 rp-bnn-claims                 1
-```
--->
+Metrics coming soon.
