@@ -1,6 +1,6 @@
 # Overview
 
-This file was updated on 2021-06-27.
+This file was updated on 2021-07-04.
 
 This document will provide a basic overview of the volume of and
 interaction with the CAS GitHub organizational account. The account was
@@ -14,7 +14,7 @@ more than one file, and in fact, most repos contain multiple files.
 
 ## By date
 
-As of 2021-06-27, there are 18 repositories on the site.
+As of 2021-07-04, there are 18 repositories on the site.
 
 The cumulative count of repos is shown in Figure
 @ref(fig:cumulative\_repo). We note that we begin with ten repos as of
@@ -52,7 +52,7 @@ repos is as follows.
 
 ## Commits
 
-There have been 1,394 commits in total.
+There have been 1,401 commits in total.
 
 The top ten repos by number of commits are:
 
@@ -66,7 +66,7 @@ The top ten repos by number of commits are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">chainladder-python</td>
-<td style="text-align: right;">758</td>
+<td style="text-align: right;">764</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">imaginator</td>
@@ -98,7 +98,7 @@ The top ten repos by number of commits are:
 </tr>
 <tr class="odd">
 <td style="text-align: left;">meta</td>
-<td style="text-align: right;">34</td>
+<td style="text-align: right;">35</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ef-yield-curve-generators</td>
@@ -156,11 +156,11 @@ The ten most frequent contributors to various repos are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">jbogaardt</td>
-<td style="text-align: right;">610</td>
+<td style="text-align: right;">611</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ResearchActuary</td>
-<td style="text-align: right;">142</td>
+<td style="text-align: right;">143</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">kevinykuo</td>
