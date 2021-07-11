@@ -1,6 +1,6 @@
 # Overview
 
-This file was updated on 2021-07-04.
+This file was updated on 2021-07-11.
 
 This document will provide a basic overview of the volume of and
 interaction with the CAS GitHub organizational account. The account was
@@ -14,7 +14,7 @@ more than one file, and in fact, most repos contain multiple files.
 
 ## By date
 
-As of 2021-07-04, there are 18 repositories on the site.
+As of 2021-07-11, there are 18 repositories on the site.
 
 The cumulative count of repos is shown in Figure
 @ref(fig:cumulative\_repo). We note that we begin with ten repos as of
@@ -52,7 +52,7 @@ repos is as follows.
 
 ## Commits
 
-There have been 1,401 commits in total.
+There have been 1,414 commits in total.
 
 The top ten repos by number of commits are:
 
@@ -66,7 +66,7 @@ The top ten repos by number of commits are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">chainladder-python</td>
-<td style="text-align: right;">764</td>
+<td style="text-align: right;">776</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">imaginator</td>
@@ -98,7 +98,7 @@ The top ten repos by number of commits are:
 </tr>
 <tr class="odd">
 <td style="text-align: left;">meta</td>
-<td style="text-align: right;">35</td>
+<td style="text-align: right;">36</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ef-yield-curve-generators</td>
@@ -156,11 +156,11 @@ The ten most frequent contributors to various repos are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">jbogaardt</td>
-<td style="text-align: right;">611</td>
+<td style="text-align: right;">612</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ResearchActuary</td>
-<td style="text-align: right;">143</td>
+<td style="text-align: right;">144</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">kevinykuo</td>
@@ -179,19 +179,19 @@ The ten most frequent contributors to various repos are:
 <td style="text-align: right;">25</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">kennethshsu</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">JJNewkirk</td>
 <td style="text-align: right;">12</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">aadler</td>
 <td style="text-align: right;">8</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">gig67</td>
-<td style="text-align: right;">7</td>
-</tr>
 <tr class="even">
-<td style="text-align: left;">thequackdaddy</td>
+<td style="text-align: left;">gig67</td>
 <td style="text-align: right;">7</td>
 </tr>
 </tbody>
