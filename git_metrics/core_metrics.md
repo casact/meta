@@ -1,6 +1,6 @@
 # Overview
 
-This file was updated on 2021-07-11.
+This file was updated on 2021-07-18.
 
 This document will provide a basic overview of the volume of and
 interaction with the CAS GitHub organizational account. The account was
@@ -14,7 +14,7 @@ more than one file, and in fact, most repos contain multiple files.
 
 ## By date
 
-As of 2021-07-11, there are 18 repositories on the site.
+As of 2021-07-18, there are 18 repositories on the site.
 
 The cumulative count of repos is shown in Figure
 @ref(fig:cumulative\_repo). We note that we begin with ten repos as of
@@ -52,7 +52,7 @@ repos is as follows.
 
 ## Commits
 
-There have been 1,414 commits in total.
+There have been 1,430 commits in total.
 
 The top ten repos by number of commits are:
 
@@ -66,7 +66,7 @@ The top ten repos by number of commits are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">chainladder-python</td>
-<td style="text-align: right;">776</td>
+<td style="text-align: right;">791</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">imaginator</td>
@@ -98,7 +98,7 @@ The top ten repos by number of commits are:
 </tr>
 <tr class="odd">
 <td style="text-align: left;">meta</td>
-<td style="text-align: right;">36</td>
+<td style="text-align: right;">37</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ef-yield-curve-generators</td>
@@ -156,11 +156,11 @@ The ten most frequent contributors to various repos are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">jbogaardt</td>
-<td style="text-align: right;">612</td>
+<td style="text-align: right;">614</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ResearchActuary</td>
-<td style="text-align: right;">144</td>
+<td style="text-align: right;">145</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">kevinykuo</td>
@@ -180,7 +180,7 @@ The ten most frequent contributors to various repos are:
 </tr>
 <tr class="odd">
 <td style="text-align: left;">kennethshsu</td>
-<td style="text-align: right;">15</td>
+<td style="text-align: right;">17</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">JJNewkirk</td>
