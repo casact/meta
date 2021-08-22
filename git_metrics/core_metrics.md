@@ -1,6 +1,6 @@
 # Overview
 
-This file was updated on 2021-08-15.
+This file was updated on 2021-08-22.
 
 This document will provide a basic overview of the volume of and
 interaction with the CAS GitHub organizational account. The account was
@@ -14,7 +14,7 @@ more than one file, and in fact, most repos contain multiple files.
 
 ## By date
 
-As of 2021-08-15, there are 19 repositories on the site.
+As of 2021-08-22, there are 20 repositories on the site.
 
 The cumulative count of repos is shown in Figure
 @ref(fig:cumulative\_repo). We note that we begin with ten repos as of
@@ -52,7 +52,7 @@ repos is as follows.
 
 ## Commits
 
-There have been 1,473 commits in total.
+There have been 1,581 commits in total.
 
 The top ten repos by number of commits are:
 
@@ -66,7 +66,7 @@ The top ten repos by number of commits are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">chainladder-python</td>
-<td style="text-align: right;">816</td>
+<td style="text-align: right;">832</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">imaginator</td>
@@ -81,28 +81,28 @@ The top ten repos by number of commits are:
 <td style="text-align: right;">97</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">FASLR</td>
+<td style="text-align: right;">86</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">raw_package</td>
 <td style="text-align: right;">76</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">PCDM</td>
 <td style="text-align: right;">75</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">cascsim</td>
 <td style="text-align: right;">50</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">meta</td>
-<td style="text-align: right;">41</td>
-</tr>
 <tr class="odd">
+<td style="text-align: left;">meta</td>
+<td style="text-align: right;">42</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">covid_19_data</td>
 <td style="text-align: right;">38</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">tryangle</td>
-<td style="text-align: right;">14</td>
 </tr>
 </tbody>
 </table>
@@ -156,27 +156,27 @@ The ten most frequent contributors to various repos are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">jbogaardt</td>
-<td style="text-align: right;">624</td>
+<td style="text-align: right;">633</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ResearchActuary</td>
-<td style="text-align: right;">149</td>
+<td style="text-align: left;">genedan</td>
+<td style="text-align: right;">160</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">ResearchActuary</td>
+<td style="text-align: right;">150</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">kevinykuo</td>
 <td style="text-align: right;">110</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">PirateGrunt</td>
 <td style="text-align: right;">108</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">genedan</td>
-<td style="text-align: right;">74</td>
-</tr>
 <tr class="even">
 <td style="text-align: left;">kennethshsu</td>
-<td style="text-align: right;">27</td>
+<td style="text-align: right;">34</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">windwill</td>
@@ -184,7 +184,7 @@ The ten most frequent contributors to various repos are:
 </tr>
 <tr class="even">
 <td style="text-align: left;">cbalona</td>
-<td style="text-align: right;">19</td>
+<td style="text-align: right;">24</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">JJNewkirk</td>
@@ -220,14 +220,18 @@ Authors who have worked on multiple repositories are:
 <td style="text-align: right;">2</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">kant</td>
+<td style="text-align: left;">genedan</td>
 <td style="text-align: right;">2</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">kevinykuo</td>
+<td style="text-align: left;">kant</td>
 <td style="text-align: right;">2</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">kevinykuo</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">windwill</td>
 <td style="text-align: right;">2</td>
 </tr>
