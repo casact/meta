@@ -1,6 +1,6 @@
 # Overview
 
-This file was updated on 2021-09-05.
+This file was updated on 2021-09-12.
 
 This document will provide a basic overview of the volume of and
 interaction with the CAS GitHub organizational account. The account was
@@ -14,7 +14,7 @@ more than one file, and in fact, most repos contain multiple files.
 
 ## By date
 
-As of 2021-09-05, there are 20 repositories on the site.
+As of 2021-09-12, there are 20 repositories on the site.
 
 The cumulative count of repos is shown in Figure
 @ref(fig:cumulative\_repo). We note that we begin with ten repos as of
@@ -52,7 +52,7 @@ repos is as follows.
 
 ## Commits
 
-There have been 1,612 commits in total.
+There have been 1,650 commits in total.
 
 The top ten repos by number of commits are:
 
@@ -66,7 +66,7 @@ The top ten repos by number of commits are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">chainladder-python</td>
-<td style="text-align: right;">861</td>
+<td style="text-align: right;">882</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">imaginator</td>
@@ -77,12 +77,12 @@ The top ten repos by number of commits are:
 <td style="text-align: right;">104</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">shiny_big_long</td>
-<td style="text-align: right;">97</td>
+<td style="text-align: left;">FASLR</td>
+<td style="text-align: right;">101</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">FASLR</td>
-<td style="text-align: right;">86</td>
+<td style="text-align: left;">shiny_big_long</td>
+<td style="text-align: right;">97</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">raw_package</td>
@@ -98,7 +98,7 @@ The top ten repos by number of commits are:
 </tr>
 <tr class="odd">
 <td style="text-align: left;">meta</td>
-<td style="text-align: right;">44</td>
+<td style="text-align: right;">45</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">covid_19_data</td>
@@ -156,15 +156,15 @@ The ten most frequent contributors to various repos are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">jbogaardt</td>
-<td style="text-align: right;">647</td>
+<td style="text-align: right;">655</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">genedan</td>
-<td style="text-align: right;">160</td>
+<td style="text-align: right;">175</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ResearchActuary</td>
-<td style="text-align: right;">152</td>
+<td style="text-align: right;">153</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">kevinykuo</td>
@@ -176,15 +176,15 @@ The ten most frequent contributors to various repos are:
 </tr>
 <tr class="even">
 <td style="text-align: left;">kennethshsu</td>
-<td style="text-align: right;">41</td>
+<td style="text-align: right;">54</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">windwill</td>
+<td style="text-align: left;">cbalona</td>
 <td style="text-align: right;">25</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">cbalona</td>
-<td style="text-align: right;">24</td>
+<td style="text-align: left;">windwill</td>
+<td style="text-align: right;">25</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">JJNewkirk</td>
