@@ -1,6 +1,6 @@
 # Overview
 
-This file was updated on 2021-12-26.
+This file was updated on 2022-01-04.
 
 This document will provide a basic overview of the volume of and
 interaction with the CAS GitHub organizational account. The account was
@@ -14,7 +14,7 @@ more than one file, and in fact, most repos contain multiple files.
 
 ## By date
 
-As of 2021-12-26, there are 20 repositories on the site.
+As of 2022-01-04, there are 20 repositories on the site.
 
 The cumulative count of repos is shown in Figure
 @ref(fig:cumulative\_repo). We note that we begin with ten repos as of
@@ -52,7 +52,7 @@ repos is as follows.
 
 ## Commits
 
-There have been 1,754 commits in total.
+There have been 1,755 commits in total.
 
 The top ten repos by number of commits are:
 
@@ -94,7 +94,7 @@ The top ten repos by number of commits are:
 </tr>
 <tr class="even">
 <td style="text-align: left;">meta</td>
-<td style="text-align: right;">60</td>
+<td style="text-align: right;">61</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">cascsim</td>
@@ -164,7 +164,7 @@ The ten most frequent contributors to various repos are:
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ResearchActuary</td>
-<td style="text-align: right;">163</td>
+<td style="text-align: right;">164</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">kevinykuo</td>
