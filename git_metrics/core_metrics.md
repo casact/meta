@@ -1,6 +1,6 @@
 # Overview
 
-This file was updated on 2022-10-09.
+This file was updated on 2022-10-16.
 
 This document will provide a basic overview of the volume of and
 interaction with the CAS GitHub organizational account. The account was
@@ -14,7 +14,7 @@ more than one file, and in fact, most repos contain multiple files.
 
 ## By date
 
-As of 2022-10-09, there are 25 repositories on the site.
+As of 2022-10-16, there are 25 repositories on the site.
 
 The cumulative count of repos is shown in Figure
 @ref(fig:cumulative\_repo). We note that we begin with ten repos as of
@@ -52,7 +52,7 @@ repos is as follows.
 
 ## Commits
 
-There have been 2,219 commits in total.
+There have been 2,251 commits in total.
 
 The top ten repos by number of commits are:
 
@@ -66,11 +66,11 @@ The top ten repos by number of commits are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">chainladder-python</td>
-<td style="text-align: right;">1157</td>
+<td style="text-align: right;">1165</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">FASLR</td>
-<td style="text-align: right;">291</td>
+<td style="text-align: right;">314</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">imaginator</td>
@@ -86,7 +86,7 @@ The top ten repos by number of commits are:
 </tr>
 <tr class="even">
 <td style="text-align: left;">meta</td>
-<td style="text-align: right;">95</td>
+<td style="text-align: right;">96</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">raw_package</td>
@@ -156,15 +156,15 @@ The ten most frequent contributors to various repos are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">jbogaardt</td>
-<td style="text-align: right;">755</td>
+<td style="text-align: right;">757</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">genedan</td>
-<td style="text-align: right;">365</td>
+<td style="text-align: right;">393</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ResearchActuary</td>
-<td style="text-align: right;">240</td>
+<td style="text-align: right;">241</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">kennethshsu</td>
