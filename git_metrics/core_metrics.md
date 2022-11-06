@@ -1,6 +1,6 @@
 # Overview
 
-This file was updated on 2022-10-30.
+This file was updated on 2022-11-06.
 
 This document will provide a basic overview of the volume of and
 interaction with the CAS GitHub organizational account. The account was
@@ -14,7 +14,7 @@ more than one file, and in fact, most repos contain multiple files.
 
 ## By date
 
-As of 2022-10-30, there are 25 repositories on the site.
+As of 2022-11-06, there are 25 repositories on the site.
 
 The cumulative count of repos is shown in Figure
 @ref(fig:cumulative\_repo). We note that we begin with ten repos as of
@@ -52,7 +52,7 @@ repos is as follows.
 
 ## Commits
 
-There have been 2,292 commits in total.
+There have been 2,399 commits in total.
 
 The top ten repos by number of commits are:
 
@@ -66,11 +66,11 @@ The top ten repos by number of commits are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">chainladder-python</td>
-<td style="text-align: right;">1165</td>
+<td style="text-align: right;">1242</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">FASLR</td>
-<td style="text-align: right;">353</td>
+<td style="text-align: right;">379</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">imaginator</td>
@@ -82,7 +82,7 @@ The top ten repos by number of commits are:
 </tr>
 <tr class="odd">
 <td style="text-align: left;">meta</td>
-<td style="text-align: right;">98</td>
+<td style="text-align: right;">99</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">shiny_big_long</td>
@@ -156,19 +156,19 @@ The ten most frequent contributors to various repos are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">jbogaardt</td>
-<td style="text-align: right;">757</td>
+<td style="text-align: right;">771</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">genedan</td>
-<td style="text-align: right;">432</td>
+<td style="text-align: right;">463</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ResearchActuary</td>
-<td style="text-align: right;">243</td>
+<td style="text-align: right;">247</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">kennethshsu</td>
-<td style="text-align: right;">168</td>
+<td style="text-align: right;">221</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">kevinykuo</td>
