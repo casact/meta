@@ -1,6 +1,6 @@
 # Overview
 
-This file was updated on 2023-01-15.
+This file was updated on 2023-01-22.
 
 This document will provide a basic overview of the volume of and
 interaction with the CAS GitHub organizational account. The account was
@@ -14,7 +14,7 @@ more than one file, and in fact, most repos contain multiple files.
 
 ## By date
 
-As of 2023-01-15, there are 27 repositories on the site.
+As of 2023-01-22, there are 28 repositories on the site.
 
 The cumulative count of repos is shown in Figure
 @ref(fig:cumulative\_repo). We note that we begin with ten repos as of
@@ -52,7 +52,7 @@ repos is as follows.
 
 ## Commits
 
-There have been 2,665 commits in total.
+There have been 2,680 commits in total.
 
 The top ten repos by number of commits are:
 
@@ -70,7 +70,7 @@ The top ten repos by number of commits are:
 </tr>
 <tr class="even">
 <td style="text-align: left;">FASLR</td>
-<td style="text-align: right;">519</td>
+<td style="text-align: right;">529</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">imaginator</td>
@@ -78,7 +78,7 @@ The top ten repos by number of commits are:
 </tr>
 <tr class="even">
 <td style="text-align: left;">meta</td>
-<td style="text-align: right;">109</td>
+<td style="text-align: right;">110</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">rp-bnn-claims</td>
@@ -160,11 +160,11 @@ The ten most frequent contributors to various repos are:
 </tr>
 <tr class="even">
 <td style="text-align: left;">genedan</td>
-<td style="text-align: right;">606</td>
+<td style="text-align: right;">616</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ResearchActuary</td>
-<td style="text-align: right;">262</td>
+<td style="text-align: right;">264</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">kennethshsu</td>
@@ -180,7 +180,7 @@ The ten most frequent contributors to various repos are:
 </tr>
 <tr class="odd">
 <td style="text-align: left;">cbalona</td>
-<td style="text-align: right;">30</td>
+<td style="text-align: right;">32</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">henrydingliu</td>
@@ -209,7 +209,7 @@ Authors who have worked on multiple repositories are:
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">ResearchActuary</td>
-<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">PirateGrunt</td>
