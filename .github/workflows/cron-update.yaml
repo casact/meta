@@ -5,6 +5,7 @@ on:
     paths:
       - '**.Rmd'
       - '**.yaml'
+  workflow_dispatch
 
 jobs:
   build:
@@ -25,7 +26,7 @@ jobs:
 
       - name: Render Rmarkdown files
         run: |
-          RMD_PATH=($(find . -name "*.Rmd"))
+          RMD_PATH=($(find . -name "core_metrics.Rmd"))
           echo $RMD_PATH
           Rscript -e 'for (f in commandArgs(TRUE)) if (file.exists(f)) rmarkdown::render(f)' ${RMD_PATH[*]} 
 
