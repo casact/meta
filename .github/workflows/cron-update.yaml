@@ -23,9 +23,6 @@ jobs:
 
       - uses: r-lib/actions/setup-renv@v2
 
-      - name: Install dependencies
-        run: Rscript -e 'install.packages(c("rmarkdown","gh", "tidyverse"))'
-
       - name: Render Rmarkdown files
         run: |
           RMD_PATH=($(find . -name "*.Rmd"))
